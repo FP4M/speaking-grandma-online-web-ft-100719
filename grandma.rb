@@ -1,8 +1,17 @@
-if ('HELLO WORLD') isUpperCase
-  { ('NO, NOT SINCE 1938!'.)
-  } else 
-  ('Hello World')
-  { ('HUH?! SPEAK UP, SONNY!') 
-if ('I LOVE YOU GRANDMA!')
-  { ('I LOVE YOU TOO PUMPKIN!')
+def speak_to_grandma(phrase)
   
+  if phrase == "I LOVE YOU GRANDMA!"
+   return "I LOVE YOU TOO PUMPKIN!"
+  
+  elsif phrase == phrase.downcase
+    return "HUH?! SPEAK UP SONNY!"
+  
+  elsif phrase == phrase.upcase
+    return "NO, NOT SINCE 1938!"
+  
+  else 
+    return "OHHH HOW I MISS MICHAEL!"
+  end  
+end
+
+speak_to_grandma("so")
